@@ -4,7 +4,7 @@ import Team from "./pages/Team";
 const MainComponnent = () => {
   return (
     <div>
-      <Home />
+      {/* <Home /> */}
       <Team />
     </div>
   );

@@ -10,7 +10,7 @@ useEffect(()=>{
 },[])
     return (
         <div>
-           	{isLoading && <h3>Loading...</h3>}
+           	{/* {isLoading && <h3>Loading...</h3>} */}
                {devsdet && devsdet.map((user) => <h5 key={user.id}>{user.name}</h5>)}
         </div>
     )

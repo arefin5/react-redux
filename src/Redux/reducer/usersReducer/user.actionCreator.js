@@ -10,9 +10,7 @@ export const devloperDetails=devsdet=>({
 })
 export const fetchDevloper=()=>dispatch=>{
     dispatch(devloperDetailsErr()) ;
-    axios.get(baseUrl+'devsdet')
+    axios.get("https://jsonplaceholder.typicode.com/users")
     .then(response=>response.data)
-    .then(devsdet=>dispatch(devloperDetailsErr(devsdet)))
+    .then(devsdet=>dispatch(devloperDetails(devsdet)))
 }
-
-// 275 clear   
